@@ -86,8 +86,8 @@ export function FeatureSection() {
           <Feature
             title="Smart Swapping Strategies"
             description={[
-              "Select the optimal DCA strategy tailored to your risk profile appetite",
-              "Custom assets & allocation strategies with algorithmic & weighted swaps.",
+              "Select the optimal DCA strategy tailored to your risk appetite",
+              "Custom assets & allocation strategies with algorithmic & weighted swaps",
               "Eliminate emotional bias from your trading decisions"
             ]}
             imageSrc="/lines.png"

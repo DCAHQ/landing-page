@@ -8,7 +8,7 @@ export function Header() {
       <div className="flex items-center justify-between">
         <Link className="flex items-center justify-center" href="#">
           <Image
-            src="/favicon.png"
+            src="/logo.ico"
             width={45}
             height={45}
             style={{ width: "auto" }}
