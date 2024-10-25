@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .bg-custom-dark {
-  background-color: #151522;
+  background-color: #0d0a08;
 }
 
 html {
@@ -82,5 +82,98 @@ body {
   }
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+.wave-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: rgb(10, 10, 15);
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.card-container {
+  position: relative;
+  z-index: 100;
+  pointer-events: auto;
+}
+
+.wave {
+  position: absolute;
+  width: 200%;
+  height: 5px;
+  animation: wave 3s linear infinite;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 140, 0, 0.5),
+    transparent
+  );
+  filter: blur(5px);
+  opacity: 0.6;
+  transform-origin: 50% 50%;
+}
+
+.wave:nth-child(1) {
+  top: 15%;
+  animation-delay: 0s;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 69, 0, 0.9),
+    transparent
+  );
+}
+
+.wave:nth-child(2) {
+  top: 35%;
+  animation-delay: -0.5s;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 140, 0, 0.7),
+    transparent
+  );
+}
+
+.wave:nth-child(3) {
+  top: 55%;
+  animation-delay: -1s;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 165, 0, 0.8),
+    transparent
+  );
+}
+
+.wave:nth-child(4) {
+  top: 75%;
+  animation-delay: -1.5s;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 215, 0, 0.9),
+    transparent
+  );
+}
+
+@keyframes wave {
+  0% {
+    transform: translateX(-50%) scaleY(1);
+  }
+  25% {
+    transform: translateX(-25%) scaleY(1.5);
+  }
+  50% {
+    transform: translateX(0%) scaleY(1);
+  }
+  75% {
+    transform: translateX(25%) scaleY(1.5);
+  }
+  100% {
+    transform: translateX(50%) scaleY(1);
   }
 }

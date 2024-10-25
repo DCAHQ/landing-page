@@ -14,9 +14,9 @@ const geistMono = localFont({
 })
 
 export const metadata: Metadata = {
-  title: "DCA",
+  title: "DCA HQ",
   description:
-    "Dollar Cost Average (DCA), the most proitable way to buy Stx, Btc, memecoins and Runes."
+    "Dollar Cost Average (DCA), the most proitable strategy to buy Stx, Btc, memecoins and Runes."
 }
 export default function RootLayout({
   children
@@ -26,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/logo.ico" />
       </head>
       <body
         className={` bg-custom-dark ${geistSans.variable} ${geistMono.variable} antialiased`}
